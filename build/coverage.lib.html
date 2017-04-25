@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-node-uglifier/node_modules/node-uglifier/lib_compiled/libs/js-graph-mod/src/js-graph.js</title>
+    <title>Code coverage report for node-npmtest-node-uglifier/node_modules/node-uglifier/lib_compiled/libs/js-graph-mod/Gruntfile.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-node-uglifier">npmtest-node-uglifier (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-node-uglifier/node_modules/node-uglifier/lib_compiled/libs/js-graph-mod/src/js-graph.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-node-uglifier/node_modules/node-uglifier/lib_compiled/libs/js-graph-mod/Gruntfile.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">9.43% <small>(25 / 265)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">14.29% <small>(1 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">3.09% <small>(3 / 97)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">4.29% <small>(3 / 70)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">9.43% <small>(25 / 265)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">14.29% <small>(1 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-node-uglifier/node_modules/node-uglifier/lib_compiled/libs/js-graph-mod/src/</a> &#187; js-graph.js</div>
+    <div class="path"><a href="../../../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-node-uglifier/node_modules/node-uglifier/lib_compiled/libs/js-graph-mod/</a> &#187; Gruntfile.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -399,822 +399,91 @@
 183
 184
 185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267
-268
-269
-270
-271
-272
-273
-274
-275
-276
-277
-278
-279
-280
-281
-282
-283
-284
-285
-286
-287
-288
-289
-290
-291
-292
-293
-294
-295
-296
-297
-298
-299
-300
-301
-302
-303
-304
-305
-306
-307
-308
-309
-310
-311
-312
-313
-314
-315
-316
-317
-318
-319
-320
-321
-322
-323
-324
-325
-326
-327
-328
-329
-330
-331
-332
-333
-334
-335
-336
-337
-338
-339
-340
-341
-342
-343
-344
-345
-346
-347
-348
-349
-350
-351
-352
-353
-354
-355
-356
-357
-358
-359
-360
-361
-362
-363
-364
-365
-366
-367
-368
-369
-370
-371
-372
-373
-374
-375
-376
-377
-378
-379
-380
-381
-382
-383
-384
-385
-386
-387
-388
-389
-390
-391
-392
-393
-394
-395
-396
-397
-398
-399
-400
-401
-402
-403
-404
-405
-406
-407
-408
-409
-410
-411
-412
-413
-414
-415
-416
-417
-418
-419
-420
-421
-422
-423
-424
-425
-426
-427
-428
-429
-430
-431
-432
-433
-434
-435
-436
-437
-438
-439
-440
-441
-442
-443
-444
-445
-446
-447
-448
-449
-450
-451
-452
-453
-454
-455
-456
-457
-458
-459
-460
-461
-462
-463
-464
-465
-466
-467
-468
-469
-470
-471
-472
-473
-474
-475
-476
-477
-478
-479
-480
-481
-482
-483
-484
-485
-486
-487
-488
-489
-490
-491
-492
-493
-494
-495
-496
-497
-498
-499
-500
-501
-502
-503
-504
-505
-506
-507
-508
-509
-510
-511
-512
-513
-514
-515
-516
-517
-518
-519
-520
-521
-522
-523
-524
-525
-526
-527
-528
-529
-530
-531
-532
-533
-534
-535
-536
-537
-538
-539
-540
-541
-542
-543
-544
-545
-546
-547
-548
-549
-550
-551
-552
-553
-554
-555
-556
-557
-558
-559
-560
-561
-562
-563
-564
-565
-566
-567
-568
-569
-570
-571
-572
-573
-574
-575
-576
-577
-578
-579
-580
-581
-582
-583
-584
-585
-586
-587
-588
-589
-590
-591
-592
-593
-594
-595
-596</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+186</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1227,11 +496,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1240,26 +505,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1271,739 +523,257 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-yes">6</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
-&nbsp;
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-// Using the Universal Module Definition `returnExports.js`
-// to support AMD, Node, as well as browser globals:
-// https://github.com/umdjs/umd/blob/master/returnExports.js
-//
-(function (root, name, factory) {
-	<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof define === 'function' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >define.amd)</span> {
-<span class="cstat-no" title="statement not covered" >		define([], factory);</span>
-	} else <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof exports === 'object') {
-		module.exports = factory();
-	} else {
-<span class="cstat-no" title="statement not covered" >		root[name] = factory();</span>
-	}
-}(this, 'JsGraph', function () {////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  // JsGraph class ///////////////////////////////////////////////////////////////////////////////////////////////////
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-<span class="fstat-no" title="function not covered" >	function JsGraph() {</span>
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var that = this;</span>
-&nbsp;
-&nbsp;
-//      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//      // Private Variables ///////////////////////////////////////////////////////////////////////////////////////////
-//      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _vertices = {}; </span>    // key -&gt; value
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _edges = {}; </span>       // from -&gt; to -&gt; value
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _reverseEdges = {}; </span>// to -&gt; from -&gt; null (_edges contains the values)
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _vertexCount = 0;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _edgeCount = 0;</span>
-&nbsp;
-&nbsp;
-//      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//      // Privileged Methods //////////////////////////////////////////////////////////////////////////////////////////
-//      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-		//////////////////////////////
-		////////// Vertices //////////
-		//////////////////////////////
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _addVertexCallbacks    = new Callbacks();</span>
-<span class="cstat-no" title="statement not covered" >		var _removeVertexCallbacks = new Callbacks();</span>
-&nbsp;
-&nbsp;
-		//// listening for them ////
-		//
-<span class="cstat-no" title="statement not covered" >		that.onAddVertex    = _addVertexCallbacks.add;</span>
-<span class="cstat-no" title="statement not covered" >		that.onRemoveVertex = _removeVertexCallbacks.add;</span>
-&nbsp;
-&nbsp;
-		//// creating them ////
-		//
-<span class="cstat-no" title="statement not covered" >		that.addNewVertex = <span class="fstat-no" title="function not covered" >function (key, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexExistsError(key, _vertices[key]);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			_vertices[key] = value;</span>
-<span class="cstat-no" title="statement not covered" >			_edges[key] = {};</span>
-<span class="cstat-no" title="statement not covered" >			_reverseEdges[key] = {};</span>
-<span class="cstat-no" title="statement not covered" >			_vertexCount += 1;</span>
-<span class="cstat-no" title="statement not covered" >			_addVertexCallbacks.fire(key, value);</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.setVertex = <span class="fstat-no" title="function not covered" >function (key, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(key);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			_vertices[key] = value;</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.ensureVertex = <span class="fstat-no" title="function not covered" >function (key, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.addNewVertex(key, value);</span>
-			}
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.addVertex = <span class="fstat-no" title="function not covered" >function (key, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.setVertex(key, value);</span>
-			} else {
-<span class="cstat-no" title="statement not covered" >				that.addNewVertex(key, value);</span>
-			}
-		};
-&nbsp;
-&nbsp;
-		//// removing them ////
-		//
-<span class="cstat-no" title="statement not covered" >		that.removeExistingVertex = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(key);</span>
-			}
-<span class="cstat-no" title="statement not covered" >			if (Object.keys(_edges[key]).length) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.HasConnectedEdgesError(key);</span>
-			}
-<span class="cstat-no" title="statement not covered" >			if (Object.keys(_reverseEdges[key]).length) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.HasConnectedEdgesError(key);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			var valueOfRemovedVertex = _vertices[key];</span>
-<span class="cstat-no" title="statement not covered" >			delete _vertices[key];</span>
-<span class="cstat-no" title="statement not covered" >			_vertexCount -= 1;</span>
-<span class="cstat-no" title="statement not covered" >			_removeVertexCallbacks.fire(key, valueOfRemovedVertex);</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.destroyExistingVertex = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(key);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			that.eachVertexFrom(key, <span class="fstat-no" title="function not covered" >function (to) {</span></span>
-<span class="cstat-no" title="statement not covered" >				that.removeEdge(key, to);</span>
-			});
-<span class="cstat-no" title="statement not covered" >			that.eachVertexTo(key, <span class="fstat-no" title="function not covered" >function (from) {</span></span>
-<span class="cstat-no" title="statement not covered" >				that.removeEdge(from, key);</span>
-			});
-<span class="cstat-no" title="statement not covered" >			that.removeExistingVertex(key);</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.removeVertex = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.removeExistingVertex(key);</span>
-			}
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.destroyVertex = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasVertex(key)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.destroyExistingVertex(key);</span>
-			}
-		};
-&nbsp;
-&nbsp;
-		///////////////////////////
-		////////// Edges //////////
-		///////////////////////////
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var _addEdgeCallbacks    = new Callbacks();</span>
-<span class="cstat-no" title="statement not covered" >		var _removeEdgeCallbacks = new Callbacks();</span>
-&nbsp;
-&nbsp;
-		//// listening for them ////
-		//
-<span class="cstat-no" title="statement not covered" >		that.onAddEdge    = _addEdgeCallbacks.add;</span>
-<span class="cstat-no" title="statement not covered" >		that.onRemoveEdge = _removeEdgeCallbacks.add;</span>
-&nbsp;
-&nbsp;
-		//// creating them ////
-		//
-<span class="cstat-no" title="statement not covered" >		that.addNewEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.EdgeExistsError(from, to, that.edgeValue(from, to));</span>
-			}
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(from)) {</span>
-<span class="cstat-no" title="statement not covered" >				if (that.hasVertex(to)) {</span>
-<span class="cstat-no" title="statement not covered" >					throw new JsGraph.VertexNotExistsError(from);</span>
-				} else {
-<span class="cstat-no" title="statement not covered" >					throw new JsGraph.VertexNotExistsError(from).v(to);</span>
-				}
-			} else <span class="cstat-no" title="statement not covered" >if (!that.hasVertex(to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(to);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			_edges[from][to] = value;</span>
-<span class="cstat-no" title="statement not covered" >			_reverseEdges[to][from] = null;</span>
-<span class="cstat-no" title="statement not covered" >			_edgeCount += 1;</span>
-<span class="cstat-no" title="statement not covered" >			_addEdgeCallbacks.fire(from, to, value);</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.createNewEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.EdgeExistsError(from, to, that.edgeValue(from, to));</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			that.ensureVertex(from);</span>
-<span class="cstat-no" title="statement not covered" >			that.ensureVertex(to);</span>
-<span class="cstat-no" title="statement not covered" >			that.addNewEdge(from, to, value);</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.setEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.EdgeNotExistsError(from, to);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			_edges[from][to] = value;</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.spanEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(from)) {</span>
-<span class="cstat-no" title="statement not covered" >				if (that.hasVertex(to)) {</span>
-<span class="cstat-no" title="statement not covered" >					throw new JsGraph.VertexNotExistsError(from);</span>
-				} else {
-<span class="cstat-no" title="statement not covered" >					throw new JsGraph.VertexNotExistsError(from).v(to);</span>
-				}
-			} else <span class="cstat-no" title="statement not covered" >if (!that.hasVertex(to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(to);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			if (!that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.addNewEdge(from, to, value);</span>
-			}
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.addEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.setEdge(from, to, value);</span>
-			} else {
-<span class="cstat-no" title="statement not covered" >				that.addNewEdge(from, to, value);</span>
-			}
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.ensureEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.createNewEdge(from, to, value);</span>
-			}
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.createEdge = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.setEdge(from, to, value);</span>
-			} else {
-<span class="cstat-no" title="statement not covered" >				that.createNewEdge(from, to, value);</span>
-			}
-		};
-&nbsp;
-&nbsp;
-		//// removing them ////
-		//
-<span class="cstat-no" title="statement not covered" >		that.removeExistingEdge = <span class="fstat-no" title="function not covered" >function (from, to) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.EdgeNotExistsError(from, to);</span>
-			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			var valueOfRemovedEdge = _edges[from][to];</span>
-<span class="cstat-no" title="statement not covered" >			delete _edges[from][to];</span>
-<span class="cstat-no" title="statement not covered" >			delete _reverseEdges[to][from];</span>
-<span class="cstat-no" title="statement not covered" >			_edgeCount -= 1;</span>
-<span class="cstat-no" title="statement not covered" >			_removeEdgeCallbacks.fire(from, to, valueOfRemovedEdge);</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.removeEdge = <span class="fstat-no" title="function not covered" >function (from, to) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (that.hasEdge(from, to)) {</span>
-<span class="cstat-no" title="statement not covered" >				that.removeExistingEdge(from, to);</span>
-			}
-		};
-&nbsp;
-&nbsp;
-		///////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.vertexCount = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >			return _vertexCount;</span>
-		};
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.hasVertex = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			return key in _vertices;</span>
-		};
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.vertexValue = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			return _vertices[key];</span>
-		};
-&nbsp;
-&nbsp;
-		///////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.edgeCount = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >			return _edgeCount;</span>
-		};
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.hasEdge = <span class="fstat-no" title="function not covered" >function (from, to) {</span></span>
-<span class="cstat-no" title="statement not covered" >			return that.hasVertex(from) &amp;&amp;</span>
-			       that.hasVertex(to) &amp;&amp;
-			       from in _edges &amp;&amp;
-			       to in _edges[from];
-		};
-&nbsp;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.edgeValue = <span class="fstat-no" title="function not covered" >function (from, to) {</span></span>
-<span class="cstat-no" title="statement not covered" >			return that.hasEdge(from, to) ? _edges[from][to] : undefined;</span>
-		};
-&nbsp;
-&nbsp;
-		///////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.eachVertex = <span class="fstat-no" title="function not covered" >function (handler) {</span></span>
-<span class="cstat-no" title="statement not covered" >			Object.keys(_vertices).forEach(<span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >				handler(key, _vertices[key]);</span>
-			});
-		};
+module.exports = <span class="fstat-no" title="function not covered" >function (grunt) {</span>
 &nbsp;
+	//// loading grunt plugins
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.eachVertexFrom = <span class="fstat-no" title="function not covered" >function (from, handler) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(from)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(from);</span>
-			}
+<span class="cstat-no" title="statement not covered" >	[ 'grunt-contrib-uglify',</span>
+	  'grunt-contrib-compress',
+	  'grunt-contrib-watch',
+	  'grunt-contrib-copy',
+	  'grunt-karma',
+	  'grunt-coveralls'
+	].map(grunt.loadNpmTasks);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			Object.keys(_edges[from]).forEach(<span class="fstat-no" title="function not covered" >function (to) {</span></span>
-<span class="cstat-no" title="statement not covered" >				handler(to, that.vertexValue(to), that.edgeValue(from, to));</span>
-			});
-		};
 &nbsp;
+<span class="cstat-no" title="statement not covered" >	grunt.initConfig({</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.eachVertexTo = <span class="fstat-no" title="function not covered" >function (to, handler) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(to)) {</span>
-<span class="cstat-no" title="statement not covered" >				throw new JsGraph.VertexNotExistsError(to);</span>
-			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			Object.keys(_reverseEdges[to]).forEach(<span class="fstat-no" title="function not covered" >function (from) {</span></span>
-<span class="cstat-no" title="statement not covered" >				handler(from, that.vertexValue(from), that.edgeValue(from, to));</span>
-			});
-		};
+		////////////////////////////
+		//// Define Directories ////
+		////////////////////////////
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.eachEdge = <span class="fstat-no" title="function not covered" >function (handler) {</span></span>
-<span class="cstat-no" title="statement not covered" >			Object.keys(_edges).forEach(<span class="fstat-no" title="function not covered" >function (from) {</span></span>
-<span class="cstat-no" title="statement not covered" >				Object.keys(_edges[from]).forEach(<span class="fstat-no" title="function not covered" >function (to) {</span></span>
-<span class="cstat-no" title="statement not covered" >					handler(from, to, _edges[from][to]);</span>
-				});
-			});
-		};
+		dirs: {
+			js:    "src",
+			build: "dist"
+		},
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.clearEdges = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >			that.eachEdge(that.removeEdge);</span>
-		};
+		//////////////////
+		//// Metadata ////
+		//////////////////
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.clear = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >			that.eachVertex(that.destroyVertex);</span>
-		};
+		pkg:         grunt.file.readJSON("package.json"),
+		banner: "\n" +
+		        "/*\n" +
+		        " * -------------------------------------------------------\n" +
+		        " * Project: &lt;%= pkg.title %&gt;\n" +
+		        " * Version: &lt;%= pkg.version %&gt;\n" +
+		        " *\n" +
+		        " * Author:  &lt;%= pkg.author.name %&gt;\n" +
+		        " * Site:    &lt;%= pkg.author.url %&gt;\n" +
+		        " * Contact: &lt;%= pkg.author.email %&gt;\n" +
+		        " *\n" +
+		        " *\n" +
+		        " * Copyright (c) &lt;%= grunt.template.today(\"yyyy\") %&gt; &lt;%= pkg.author.name %&gt;\n" +
+		        " * -------------------------------------------------------\n" +
+		        " */\n" +
+		        "\n",
+		smallBanner: "/* &lt;%= pkg.name %&gt; - v&lt;%= pkg.version %&gt; - &lt;%= grunt.template.today(\"yyyy-mm-dd\") %&gt; */",
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.hasPath = <span class="fstat-no" title="function not covered" >function (from, to) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (!that.hasVertex(from) || !that.hasVertex(to)) {</span>
-<span class="cstat-no" title="statement not covered" >				return false;</span>
-			}
+		////////////////////////////////////////
+		//// Copying file to dist directory ////
+		////////////////////////////////////////
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			var visited = {};</span>
 &nbsp;
-			//// Recursive auxiliary function: Is there a path from 'current' to 'to'?
-			//
-<span class="fstat-no" title="function not covered" >			function hasPathAux(current) {</span>
-<span class="cstat-no" title="statement not covered" >				if (that.hasEdge(current, to)) {</span>
-<span class="cstat-no" title="statement not covered" >					return true;</span>
-				}
-<span class="cstat-no" title="statement not covered" >				visited[current] = true;</span>
-<span class="cstat-no" title="statement not covered" >				var found = false;</span>
-<span class="cstat-no" title="statement not covered" >				that.eachVertexFrom(current, <span class="fstat-no" title="function not covered" >function (next) {</span></span>
-<span class="cstat-no" title="statement not covered" >					if (!found &amp;&amp; !visited[next] &amp;&amp; hasPathAux(next)) {</span>
-<span class="cstat-no" title="statement not covered" >						found = true;</span>
+		copy: {
+			source: {
+				files: [
+					{
+						expand:  true,
+						flatten: true,
+						src:     "&lt;%= dirs.js %&gt;/&lt;%= pkg.name %&gt;.js",
+						dest:    "&lt;%= dirs.build %&gt;"
 					}
-				});
-<span class="cstat-no" title="statement not covered" >				delete visited[current];</span>
-<span class="cstat-no" title="statement not covered" >				return found;</span>
+				]
+			},
+			lcov: {
+				files: [
+					{
+						expand:  true,
+						flatten: true,
+						src:     ["coverage/*/lcov.info"],
+						dest:    "coverage"
+					}
+				]
 			}
+		},
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			return hasPathAux(from);</span>
-		};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.topologically = <span class="fstat-no" title="function not covered" >function (handler) {</span></span>
-<span class="cstat-no" title="statement not covered" >			var visited = [];</span>
-<span class="cstat-no" title="statement not covered" >			var handled = {};</span>
+		//////////////////////
+		//// Minification ////
+		//////////////////////
 &nbsp;
-<span class="fstat-no" title="function not covered" >			function visit(a) {</span>
-<span class="cstat-no" title="statement not covered" >				visited.push(a);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >				var i = visited.indexOf(a);</span>
-<span class="cstat-no" title="statement not covered" >				if (i !== visited.length - 1) {</span>
-<span class="cstat-no" title="statement not covered" >					var cycle = visited.slice(i + 1).reverse();</span>
-<span class="cstat-no" title="statement not covered" >                    console.error(cycle)</span>
-<span class="cstat-no" title="statement not covered" >					throw new JsGraph.CycleError(cycle);</span>
+		uglify: {
+			dist: {
+				options: {
+					banner:    "&lt;%= smallBanner %&gt;",
+					sourceMap: true,
+					report:    'gzip'
+				},
+				files:   {
+					"&lt;%= dirs.build %&gt;/&lt;%= pkg.name %&gt;.min.js": "&lt;%= dirs.js %&gt;/&lt;%= pkg.name %&gt;.js"
 				}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >				if (!handled[a]) {</span>
-<span class="cstat-no" title="statement not covered" >					that.eachVertexTo(a, visit);</span>
-<span class="cstat-no" title="statement not covered" >					handled[a] = { returned: handler(a, that.vertexValue(a)) };</span>
-				}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >				visited.pop();</span>
 			}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			that.eachVertex(<span class="fstat-no" title="function not covered" >function (a) {</span></span>
-<span class="cstat-no" title="statement not covered" >				if (!handled[a]) {</span>
-<span class="cstat-no" title="statement not covered" >					visit(a);</span>
-				}
-			});
-		};
-&nbsp;
-	}
+		},
 &nbsp;
 &nbsp;
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  // Utility /////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		/////////////////////
+		//// Compression ////
+		/////////////////////
 &nbsp;
 &nbsp;
-<span class="fstat-no" title="function not covered" >	function set2dObj(A, one, two, val) {</span>
-<span class="cstat-no" title="statement not covered" >		if (typeof A[one] === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >			A[one] = {};</span>
-		}
-<span class="cstat-no" title="statement not covered" >		A[one][two] = val;</span>
-	}
-&nbsp;
-&nbsp;
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  // Callbacks ///////////////////////////////////////////////////////////////////////////////////////////////////////
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-<span class="fstat-no" title="function not covered" >	function Callbacks() {</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		var callbacks = [];</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		this.add = <span class="fstat-no" title="function not covered" >function (fn) {</span></span>
-<span class="cstat-no" title="statement not covered" >			if (callbacks.indexOf(fn) === -1) {</span>
-<span class="cstat-no" title="statement not covered" >				callbacks.push(fn);</span>
+		compress: {
+			dist: {
+				options: { mode: 'gzip' },
+				src:     "&lt;%= dirs.build %&gt;/&lt;%= pkg.name %&gt;.min.js",
+				dest:    "&lt;%= dirs.build %&gt;/&lt;%= pkg.name %&gt;.min.js.gz"
 			}
-<span class="cstat-no" title="statement not covered" >			return <span class="fstat-no" title="function not covered" >function removeCallback() {</span></span>
-<span class="cstat-no" title="statement not covered" >				var index = callbacks.indexOf(fn);</span>
-<span class="cstat-no" title="statement not covered" >				if (index !== -1) {</span>
-<span class="cstat-no" title="statement not covered" >					callbacks.splice(index, 1);</span>
+		},
+&nbsp;
+&nbsp;
+		/////////////////
+		//// Testing ////
+		/////////////////
+&nbsp;
+&nbsp;
+		karma: {
+			options: {
+				basePath:   '',
+				frameworks: [ 'jasmine', 'requirejs' ],
+				exclude:    [],
+				runnerPort: 9876,
+				colors:     true,
+				logLevel:   'INFO',
+				autoWatch:  false,
+				browsers:   ['PhantomJS'],
+				singleRun:  true
+			},
+			dev:     {
+				options: {
+					files:            [ 'spec/main-dev.js', {pattern: '**/*.js', included: false} ],
+					reporters:        ['progress', 'coverage'],
+					preprocessors:    { 'src/**/*.js': ['coverage'] },
+					coverageReporter: {
+						reporters: [
+							{ type: 'text-summary' },
+							{ type: 'lcovonly'}
+						]
+					}
 				}
-			};
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		this.fire = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >			var args = arguments;</span>
-<span class="cstat-no" title="statement not covered" >			callbacks.forEach(<span class="fstat-no" title="function not covered" >function (fn) {</span></span>
-<span class="cstat-no" title="statement not covered" >				fn.apply(null, args);</span>
-			});
-		};
-&nbsp;
-	}
+			},
+			dist:    {
+				options: {
+					files:     [ 'spec/main-dist.js', {pattern: '**/*.js', included: false} ],
+					reporters: ['progress']
+				}
+			}
+		},
 &nbsp;
 &nbsp;
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  // Errors //////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//////////////////
+		//// Coverage ////
+		//////////////////
 &nbsp;
-&nbsp;
-	function newError(name, constructor) {
-		//noinspection JSUnusedGlobalSymbols
-		constructor.prototype.__proto__ = Error.prototype;
-		constructor.prototype.constructor = constructor;
-		constructor.prototype.name = name;
-		return constructor;
-	}
-&nbsp;
-&nbsp;
-	JsGraph.VertexExistsError = newError("VertexExistsError", <span class="fstat-no" title="function not covered" >function (key, value) {</span>
-<span class="cstat-no" title="statement not covered" >		var that = this;</span>
-&nbsp;
-<span class="fstat-no" title="function not covered" >		function refreshMessage() {</span>
-<span class="cstat-no" title="statement not covered" >			that.message = "This graph has " +</span>
-			               (that.vertices === 1 ? "a vertex" : "vertices") +
-			               " '" + Object.keys(that.vertices).join("', '") + "'";
+		coveralls: {
+			dev:  {
+				src:     'coverage/lcov.info',
+				options: {
+					force: true
+				}
+			}
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.v = <span class="fstat-no" title="function not covered" >function (key, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			that.vertices[key] = value;</span>
-<span class="cstat-no" title="statement not covered" >			refreshMessage();</span>
-<span class="cstat-no" title="statement not covered" >			return that;</span>
-		};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		that.vertices = {};</span>
-<span class="cstat-no" title="statement not covered" >		that.v(key, value);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		refreshMessage();</span>
 	});
 &nbsp;
 &nbsp;
-	JsGraph.VertexNotExistsError = newError("VertexNotExistError", <span class="fstat-no" title="function not covered" >function (key) {</span>
-<span class="cstat-no" title="statement not covered" >		var that = this;</span>
-&nbsp;
-<span class="fstat-no" title="function not covered" >		function refreshMessage() {</span>
-<span class="cstat-no" title="statement not covered" >			that.message = "This graph does not have " +</span>
-			               (that.vertices === 1 ? "a vertex" : "vertices") +
-			               " '" + Object.keys(that.vertices).join("', '") + "'";
-		}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.v = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >			that.vertices[key] = undefined;</span>
-<span class="cstat-no" title="statement not covered" >			refreshMessage();</span>
-<span class="cstat-no" title="statement not covered" >			return that;</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.vertices = {};</span>
-<span class="cstat-no" title="statement not covered" >		that.v(key);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		refreshMessage();</span>
-	});
+	////////////////////////
+	//// Register Tasks ////
+	////////////////////////
 &nbsp;
 &nbsp;
-	JsGraph.EdgeExistsError = newError("EdgeExistsError", <span class="fstat-no" title="function not covered" >function (from, to, value) {</span>
-<span class="cstat-no" title="statement not covered" >		var that = this;</span>
+<span class="cstat-no" title="statement not covered" >	grunt.registerTask("test:dev", [ "karma:dev"  ]);</span>
+<span class="cstat-no" title="statement not covered" >	grunt.registerTask("test:dist", [ "karma:dist" ]);</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >		function refreshMessage() {</span>
-<span class="cstat-no" title="statement not covered" >			var edges = [];</span>
+<span class="cstat-no" title="statement not covered" >	grunt.registerTask("coverage:dev", [ "copy:lcov", "coveralls:dev"  ]);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			Object.keys(that.edges).forEach(<span class="fstat-no" title="function not covered" >function (from) {</span></span>
-<span class="cstat-no" title="statement not covered" >				Object.keys(that.edges[from]).forEach(<span class="fstat-no" title="function not covered" >function (to) {</span></span>
-<span class="cstat-no" title="statement not covered" >					edges.push("('" + from + "', '" + to + "')");</span>
-				});
-			});
+<span class="cstat-no" title="statement not covered" >	grunt.registerTask("dist", [ "copy:source", "uglify:dist", "compress:dist" ]);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			that.message = "This graph has " +</span>
-			               (edges.length === 1 ? "an edge " : "edges ") +
-			               edges.join(", ");
-		}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.e = <span class="fstat-no" title="function not covered" >function (from, to, value) {</span></span>
-<span class="cstat-no" title="statement not covered" >			set2dObj(that.edges, from, to, value);</span>
-<span class="cstat-no" title="statement not covered" >			refreshMessage();</span>
-<span class="cstat-no" title="statement not covered" >			return that;</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.edges = {};</span>
-<span class="cstat-no" title="statement not covered" >		that.e(from, to, value);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		refreshMessage();</span>
-	});
-&nbsp;
-&nbsp;
-	JsGraph.EdgeNotExistsError = newError("EdgeNotExistError", <span class="fstat-no" title="function not covered" >function (from, to) {</span>
-<span class="cstat-no" title="statement not covered" >		var that = this;</span>
-&nbsp;
-<span class="fstat-no" title="function not covered" >		function refreshMessage() {</span>
-<span class="cstat-no" title="statement not covered" >			var edges = [];</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			Object.keys(that.edges).forEach(<span class="fstat-no" title="function not covered" >function (from) {</span></span>
-<span class="cstat-no" title="statement not covered" >				Object.keys(that.edges[from]).forEach(<span class="fstat-no" title="function not covered" >function (to) {</span></span>
-<span class="cstat-no" title="statement not covered" >					edges.push("('" + from + "', '" + to + "')");</span>
-				});
-			});
-&nbsp;
-<span class="cstat-no" title="statement not covered" >			that.message = "This graph does not have " +</span>
-			               (edges.length === 1 ? "an edge " : "edges ") +
-			               edges.join(", ");
-		}
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.e = <span class="fstat-no" title="function not covered" >function (from, to) {</span></span>
-<span class="cstat-no" title="statement not covered" >			set2dObj(that.edges, from, to, undefined);</span>
-<span class="cstat-no" title="statement not covered" >			refreshMessage();</span>
-<span class="cstat-no" title="statement not covered" >			return that;</span>
-		};
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		that.edges = {};</span>
-<span class="cstat-no" title="statement not covered" >		that.e(from, to);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >		refreshMessage();</span>
-	});
-&nbsp;
-&nbsp;
-	JsGraph.HasConnectedEdgesError = newError("HasConnectedEdgesError", <span class="fstat-no" title="function not covered" >function (key) {</span>
-<span class="cstat-no" title="statement not covered" >		this.message = "The '" + key + "' vertex has connected edges";</span>
-<span class="cstat-no" title="statement not covered" >		this.key = key;</span>
-	});
-&nbsp;
-&nbsp;
-	JsGraph.CycleError = newError("CycleError", <span class="fstat-no" title="function not covered" >function (cycle) {</span>
-<span class="cstat-no" title="statement not covered" >		this.message = "This graph contains a cycle: " + this.cycle;</span>
-<span class="cstat-no" title="statement not covered" >		this.cycle = cycle;</span>
-	});
-&nbsp;
-&nbsp;
-//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-&nbsp;
-&nbsp;
-	return JsGraph;
-&nbsp;
-&nbsp;
-}));////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+};
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 01:21:04 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 11:45:28 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
