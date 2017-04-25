@@ -1,4 +1,7 @@
-# test coverage for  [node-uglifier (v0.5.41)](https://github.com/zsoltszabo/node-uglifier)  [![npm package](https://img.shields.io/npm/v/npmtest-node-uglifier.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-uglifier) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-uglifier.svg)](https://travis-ci.org/npmtest/node-npmtest-node-uglifier)
+# npmtest-node-uglifier
+
+#### basic test coverage for  [node-uglifier (v0.5.41)](https://github.com/zsoltszabo/node-uglifier)  [![npm package](https://img.shields.io/npm/v/npmtest-node-uglifier.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-uglifier) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-uglifier.svg)](https://travis-ci.org/npmtest/node-npmtest-node-uglifier)
+
 #### Fully auto merging and uglifying a whole NodeJs project into one file with external files option. Thieves lose the module name and structure information, code runs faster. Makes deployement super easy!
 Also now you can separate your dependencies!
 
@@ -8,7 +11,7 @@ Also now you can separate your dependencies!
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-node-uglifier/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-node-uglifier/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-node-uglifier/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-node-uglifier/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-uglifier/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-uglifier/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-node-uglifier/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-node-uglifier/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-uglifier/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-uglifier/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-node-uglifier/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-node-uglifier/build/coverage.html/index.html)
 
@@ -95,7 +98,8 @@ Also now you can separate your dependencies!
         "test": "node nodeunit.js ./lib_compiled/test/unitTest.js"
     },
     "url": "https://github.com/zsoltszabo/node-uglifier",
-    "version": "0.5.41"
+    "version": "0.5.41",
+    "bin": {}
 }
 ```
 
